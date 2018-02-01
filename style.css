@@ -3,28 +3,40 @@
     display: flex;
     Flex-direction: row;
     Background-color: yellow;
+    height: 700px;
+    width: 1400px;
 }
 
 .summary {
+    height: 100%;
     background-color: aqua;
-    Height: 15%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
-.title-box {
-    outline: 2px solid black;
+.title {
+    color: Red;
+    border: 2px solid black;
 }
 
-.description: {
-    outline: 2px solid yellow;
+.description {
+    border: 2px solid rgb(255, 0, 170);
+    
 }
 
 .gallery {
-    border: 2px solid red;
+    width: 70%;
+    height: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: red orange blue green;
     display: flex;
-    Flex-direction: row;
-    Height: 50px;
+    Flex-flow: column wrap;
+    Justify-content: space-between;
+    
 }
 
-.photo {
+.photo* {
     background-color: blue
 }
