@@ -1,28 +1,32 @@
 
 .project {
     display: flex;
-    Flex-direction: row;
-    Background-color: yellow;
-    height: 700px;
-    width: 1400px;
+    flex-direction: column;
+    background-color: rgb(90, 50, 4);
+    height: 2300px;
 }
 
 .summary {
-    height: 100%;
-    background-color: aqua;
+    height: 100%;   
+    background-color: rgb(243, 201, 16);
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
+    
 }
 
 .title {
     color: Red;
     border: 2px solid black;
+   
 }
 
 .description {
     border: 2px solid rgb(255, 0, 170);
     
+}
+article {
+    height:75%;
 }
 
 .gallery {
@@ -32,11 +36,25 @@
     border-style: solid;
     border-color: red orange blue green;
     display: flex;
-    Flex-flow: column wrap;
-    Justify-content: space-between;
+    flex-flow: column wrap;
+    justify-content: space-between;
     
 }
+.gallery img {
+width: 50%;
 
-.photo* {
-    background-color: blue
+
+}
+/* Small Resolution First - CSS file structure*/
+/* Larger resolution layouts here */
+
+@media (min-width: 800px) {
+    .project {
+        flex-direction:row;
+        height:100vh;
+    } 
+    article{
+        height: 100%;
+        flex-grow:1;
+    }
 }
