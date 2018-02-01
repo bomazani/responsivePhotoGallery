@@ -1,0 +1,30 @@
+
+.project {
+    display: flex;
+    Flex-direction: row;
+    Background-color: yellow;
+}
+
+.summary {
+    background-color: aqua;
+    Height: 15%;
+}
+
+.title-box {
+    outline: 2px solid black;
+}
+
+.description: {
+    outline: 2px solid yellow;
+}
+
+.gallery {
+    border: 2px solid red;
+    display: flex;
+    Flex-direction: row;
+    Height: 50px;
+}
+
+.photo {
+    background-color: blue
+}
